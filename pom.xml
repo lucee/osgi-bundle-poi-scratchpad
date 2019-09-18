@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>poi-scratchpad</artifactId>
-  <version>3.15.0</version>
-  <name>poi-scratchpad</name>
+  <version>4.1.0</version>
+  <name>Apache POI Scratch Pad</name>
   <packaging>bundle</packaging>
 
-  <description>OSGi Version of poi-scratchpad</description>
+  <description>OSGi Version of Apache POI Scratch Pad</description>
   <url>http://maven.lucee.org/poi-scratchpad/</url>
 
   <!-- same license as the original jar -->
@@ -95,7 +95,7 @@
                  <artifactItem>
                    <groupId>org.apache.poi</groupId>
                     <artifactId>poi-scratchpad</artifactId>
-                    <version>3.15</version>
+                    <version>4.1.0</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -115,11 +115,11 @@
         <configuration>
           <unpackBundle>true</unpackBundle>
           <instructions>
-            <Bundle-Name>org.lucee.poi.poi.scratchpad</Bundle-Name>
-            <Bundle-SymbolicName>org.lucee.poi.poi.scratchpad</Bundle-SymbolicName>
+            <Bundle-Name>org.lucee.poi-scratchpad</Bundle-Name>
+            <Bundle-SymbolicName>org.lucee.poi-scratchpad</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
-            <Export-Package>*</Export-Package>
-            <Require-Bundle>org.lucee.poi;bundle-version=3.15.0</Require-Bundle>
+            <Export-Package>*,META-INF.services.*</Export-Package>
+            <Require-Bundle>org.lucee.poi;bundle-version=4.1.0</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
             <!-- <Import-Package>*</Import-Package> -->
             <!-- <DynamicImport-Package>*</DynamicImport-Package> -->
@@ -139,7 +139,7 @@
     <url>https://github.com/lucee/osgi-bundle-poi-scratchpad</url>
     <connection>scm:git:git://github.com/lucee/osgi-bundle-poi-scratchpad.git</connection>
     <developerConnection>scm:git:git@github.com:lucee/osgi-bundle-poi-scratchpad.git</developerConnection>
-    <tag>poi-scratchpad OSGi library</tag>
+    <tag>Apache POI Scratch Pad OSGi library</tag>
   </scm>
 
   <distributionManagement>
